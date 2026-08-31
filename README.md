@@ -1,73 +1,73 @@
-# 🗼 Torre de Hanoi
+# 🗼 Tower of Hanoi
 
-Un juego interactivo y dinámico de la Torre de Hanoi, hecho en Python con `tkinter`.
+An interactive, dynamic Tower of Hanoi game built in Python with `tkinter`.
 
 ![Python](https://img.shields.io/badge/Python-3.7%2B-blue)
 
-## 📋 Requisitos
+## 📋 Requirements
 
-- **Python 3.7 o superior**
-- **tkinter** (incluido por defecto en la mayoría de instalaciones de Python)
+- **Python 3.7 or higher**
+- **tkinter** (included by default in most Python installations)
 
-No necesitas instalar ninguna librería extra (`pip`) — el juego solo usa la librería estándar de Python.
+No extra libraries (`pip install`) are needed — the game only uses Python's standard library.
 
-### Verificar que tienes tkinter
+### Check that you have tkinter
 
-En algunas distribuciones de Linux, `tkinter` no viene preinstalado. Verifica con:
+On some Linux distributions, `tkinter` doesn't come pre-installed. Check with:
 
 ```bash
 python3 -m tkinter
 ```
 
-Si se abre una ventanita de prueba, ya lo tienes. Si da error, instálalo según tu sistema:
+If a small test window pops up, you're good to go. If it errors out, install it for your system:
 
-| Sistema | Comando |
+| System | Command |
 |---|---|
-| **Windows** | Ya viene incluido con el instalador oficial de Python (python.org) |
-| **macOS** | Ya viene incluido con Python de python.org (no siempre con el de Homebrew) |
+| **Windows** | Included by default with the official installer from python.org |
+| **macOS** | Included with Python from python.org (not always with the Homebrew build) |
 | **Ubuntu / Debian** | `sudo apt install python3-tk` |
 | **Fedora** | `sudo dnf install python3-tkinter` |
 | **Arch Linux** | `sudo pacman -S tk` |
 
-## 📥 Instalación
+## 📥 Installation
 
-1. Descarga el archivo `torre_hanoi.py`.
-2. Colócalo en cualquier carpeta de tu computadora.
-3. ¡Listo! No hace falta compilar ni instalar nada más.
+1. Download the `tower_of_hanoi.py` file.
+2. Place it in any folder on your computer.
+3. That's it — no build step or extra install needed.
 
-## ▶️ Cómo ejecutar el juego
+## ▶️ How to run the game
 
-Abre una terminal (o símbolo del sistema) en la carpeta donde guardaste el archivo y ejecuta:
+Open a terminal (or command prompt) in the folder where you saved the file and run:
 
 ```bash
-python3 torre_hanoi.py
+python3 tower_of_hanoi.py
 ```
 
-> En Windows, si `python3` no funciona, prueba con `python torre_hanoi.py`.
+> On Windows, if `python3` doesn't work, try `python tower_of_hanoi.py`.
 
-## 🎮 Cómo jugar
+## 🎮 How to play
 
-1. Haz clic en una torre para **seleccionar** el disco de arriba (se resalta en amarillo).
-2. Haz clic en otra torre para **moverlo** ahí.
-3. **Objetivo:** mover toda la pila de discos desde la Torre A hasta la Torre C, usando la Torre B como apoyo — sin poner nunca un disco más grande sobre uno más chico.
+1. Click a tower to **select** its top disk (it highlights in yellow).
+2. Click another tower to **move it** there.
+3. **Goal:** move the entire stack of disks from Tower A to Tower C, using Tower B as a helper — never placing a bigger disk on top of a smaller one.
 
-### Controles disponibles
+### Available controls
 
-| Botón | Función |
+| Button | Function |
 |---|---|
-| 🔄 **Reiniciar** | Vuelve a empezar la partida actual |
-| 🔢 **Cambiar # discos** | Elige entre 3 y 8 discos con un control deslizante |
-| 🤖 **Resolver automáticamente** | La computadora resuelve el juego paso a paso (modo demostración) |
-| ↩️ **Deshacer** | Revierte el último movimiento realizado |
+| 🔄 **Restart** | Starts the current game over |
+| 🔢 **Change # of disks** | Choose between 3 and 8 disks with a slider |
+| 🤖 **Auto-solve** | The computer solves the puzzle step by step (demo mode) |
+| ↩️ **Undo** | Reverts the last move |
 
-El juego lleva la cuenta de tus **movimientos** y el **tiempo transcurrido**, y te muestra cuál es el mínimo de movimientos posible (2ⁿ − 1). ¡Si lo logras en el mínimo, obtienes puntuación perfecta! 🏆
+The game tracks your **moves** and **elapsed time**, and shows you the minimum number of moves possible (2ⁿ − 1). If you match the minimum, you get a perfect score! 🏆
 
-## 🛠️ Solución de problemas
+## 🛠️ Troubleshooting
 
-- **"No module named tkinter"** → instala tkinter según la tabla de arriba y vuelve a intentar.
-- **La ventana no se ve bien / muy pequeña o grande** → depende de la resolución de tu pantalla; el tamaño de la ventana es fijo por diseño.
-- **No pasa nada al hacer clic** → asegúrate de hacer clic dentro del área de las torres (el lienzo oscuro), no en los botones.
+- **"No module named tkinter"** → install tkinter following the table above and try again.
+- **The window looks too small/large** → the window size is fixed by design; this can vary with your screen's scaling settings.
+- **Nothing happens when I click** → make sure you're clicking inside the tower area (the dark canvas), not on the buttons.
 
-## 📄 Licencia
+## 📄 License
 
-Libre de usar, modificar y compartir.
+Free to use, modify, and share.
